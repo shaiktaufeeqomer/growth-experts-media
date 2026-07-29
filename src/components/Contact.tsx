@@ -10,7 +10,7 @@ const contactInfo = [
 ];
 
 export function Contact() {
-  const { status, message, submit } = useContact();
+  const { status, message, submit, reset } = useContact();
   const [form, setForm] = useState({ name: '', email: '', company: '', message: '' });
   const [touched, setTouched] = useState(false);
 
@@ -77,7 +77,7 @@ export function Contact() {
                     <p className="text-base font-semibold text-white">Message sent!</p>
                     <p className="mt-2 text-sm text-white/70">{message}</p>
                     <button
-                      onClick={() => setForm({ name: '', email: '', company: '', message: '' })}
+                      onClick={() => reset()}
                       className="btn-secondary mt-5 text-sm"
                     >
                       Send another message
