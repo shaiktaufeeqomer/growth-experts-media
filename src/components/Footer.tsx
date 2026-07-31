@@ -76,14 +76,29 @@ export function Footer() {
             {/* Legal + contact */}
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
-                Get in touch
+                Contact
               </p>
-              <ul className="mt-4 space-y-2.5 text-sm text-white/65">
+              <ul className="mt-4 mb-8 space-y-2.5 text-sm text-white/65">
                 <li>
-                  <a href="mailto:hello@growthexperts.media" className="transition-colors hover:text-white">
-                    hello@growthexperts.media
+                  <a href="mailto:growthxpertsmedia@gmail.com" className="transition-colors hover:text-white break-all">
+                    growthxpertsmedia@gmail.com
                   </a>
                 </li>
+                <li>
+                  <a href="tel:9849484637" className="transition-colors hover:text-white">
+                    +91 9849484637
+                  </a>
+                </li>
+                <li className="leading-relaxed">
+                  Flat number 806, Babukhan estate business complex,<br />
+                  basheer bagh, hyderabad.
+                </li>
+              </ul>
+
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
+                Legal
+              </p>
+              <ul className="mt-4 space-y-2.5 text-sm text-white/65">
                 <li>
                   <a href="#" className="transition-colors hover:text-white">
                     Privacy Policy

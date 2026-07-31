@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Check, Loader2, Send, Calendar, Mail, MessageSquare } from 'lucide-react';
+import { Check, Loader2, Send, Mail, MapPin, Phone } from 'lucide-react';
 import { Reveal } from '@/components/Reveal';
 import { useContact } from '@/hooks/useContact';
 
 const contactInfo = [
-  { icon: Mail, label: 'Email us', value: 'hello@growthexperts.media' },
-  { icon: Calendar, label: 'Book a call', value: 'Free 30-min strategy session' },
-  { icon: MessageSquare, label: 'Response time', value: 'Within 1 business day' },
+  { icon: Phone, label: 'Call us', value: '9849484637' },
+  { icon: Mail, label: 'Email us', value: 'growthxpertsmedia@gmail.com' },
+  { icon: MapPin, label: 'Visit us', value: 'Flat number 806, Babukhan estate business complex, basheer bagh, hyderabad.' },
 ];
 
 export function Contact() {

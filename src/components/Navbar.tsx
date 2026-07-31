@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const links = [
   { label: 'Services', href: '#services' },
@@ -36,12 +36,14 @@ export function Navbar() {
         {/* Logo */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="flex items-center gap-2.5 rounded-pill pr-2"
+          className="flex items-center gap-2.5 rounded-pill pr-2 transition-transform hover:scale-105"
           aria-label="Growth Experts Media home"
         >
-          <span className="grid h-9 w-9 place-items-center rounded-2xl bg-gradient-to-br from-accent-electric to-accent-violet shadow-glow">
-            <Sparkles className="h-5 w-5 text-white" strokeWidth={2} />
-          </span>
+          <img 
+            src="/logo.jpg" 
+            alt="Growth Experts Media" 
+            className="h-10 w-10 object-contain rounded-2xl animate-pulse" 
+          />
           <span className="hidden text-[15px] font-semibold tracking-tight text-white sm:block">
             Growth Experts Media
           </span>
